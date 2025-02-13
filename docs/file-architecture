@@ -1,0 +1,69 @@
+microservices-app/
+│── auth-service/             # Authentication Service (PostgreSQL)
+│   ├── src/main/java/com/example/auth/
+│   │   ├── controller/
+│   │   │   ├── AuthController.java
+│   │   ├── model/
+│   │   │   ├── User.java
+│   │   ├── repository/
+│   │   │   ├── UserRepository.java
+│   │   ├── service/
+│   │   │   ├── AuthService.java
+│   │   ├── security/
+│   │   │   ├── JwtUtil.java
+│   │   │   ├── SecurityConfig.java
+│   ├── application.yml
+│
+│── job-service/              # Job Management Service (MongoDB)
+│   ├── src/main/java/com/example/job/
+│   │   ├── controller/
+│   │   │   ├── JobController.java
+│   │   ├── model/
+│   │   │   ├── Job.java
+│   │   ├── repository/
+│   │   │   ├── JobRepository.java
+│   │   ├── service/
+│   │   │   ├── JobService.java
+│   ├── application.yml
+│
+│── student-service/          # Student Management Service (MongoDB)
+│   ├── src/main/java/com/example/student/
+│   │   ├── controller/
+│   │   │   ├── StudentController.java
+│   │   ├── model/
+│   │   │   ├── Student.java
+│   │   ├── repository/
+│   │   │   ├── StudentRepository.java
+│   │   ├── service/
+│   │   │   ├── StudentService.java
+│   ├── application.yml
+│
+│── recruiter-service/        # Recruiter Management Service (MongoDB)
+│   ├── src/main/java/com/example/recruiter/
+│   │   ├── controller/
+│   │   │   ├── RecruiterController.java
+│   │   ├── model/
+│   │   │   ├── Recruiter.java
+│   │   ├── repository/
+│   │   │   ├── RecruiterRepository.java
+│   │   ├── service/
+│   │   │   ├── RecruiterService.java
+│   ├── application.yml
+│
+│── api-gateway/              # API Gateway (Spring Cloud Gateway)
+│   ├── src/main/java/com/example/gateway/
+│   │   ├── GatewayConfig.java
+│   ├── application.yml
+│
+│── config-server/            # Centralized Configuration (Spring Cloud Config)
+│   ├── src/main/java/com/example/config/
+│   │   ├── ConfigServer.java
+│   ├── application.yml
+│
+│── discovery-server/         # Service Discovery (Eureka)
+│   ├── src/main/java/com/example/discovery/
+│   │   ├── EurekaServer.java
+│   ├── application.yml
+│
+│── docker-compose.yml        # Containerization for microservices
+│── README.md                 # Documentation
